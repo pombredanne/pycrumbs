@@ -1,5 +1,6 @@
 #Contents
 * [Beginner's Delight](#beginners-delight)
+* [Why Python?](#why-python)
 * [Style Guide and Idioms](#style-guide-and-idioms)
 * [Dictionary](#dictionary)
 * [Decorators](#decorators)
@@ -28,6 +29,7 @@
         * [Django](#django)
         * [Bottle](#bottle)
         * [Tornado](#tornado)
+    * [Web Servers](#web-servers)
     * [API and Web Services](#api-and-web-services)
     * [Scraping](#scraping)
 * [Mobile Development](#mobile-development)
@@ -44,9 +46,11 @@
 * [Data Mining](#data-mining)
 * [Data Analysis](#data-analysis)
     * [Pandas](#pandas)
+* [IPython Notebooks](#ipython-notebooks)
 * [Design Patterns](#design-patterns)
     * [Concurrency Patterns](#concurrency-patterns)
 * [Concurrency and Distributed Systems](#concurrency-and-distributed-systems)
+* [Functional Programming](#functional-programming)
 * [Python 2 vs Python 3](#python-2-vs-3)
     * [Porting to Python 3](#porting-to-python-3)
 * [Books](#books)
@@ -94,14 +98,29 @@
 * [Be Pythonic: __init__.py](http://mikegrouchy.com/blog/2012/05/be-pythonic-__init__py.html)
 * [Building an open-source Python application the right way](http://kirang.in/2013/09/09/building-an-open-source-python-application-the-right-way/)
 * [Python progression path - From apprentice to guru](http://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru)
-* [Learn python through Test Driven Development](https://github.com/gregmalcolm/python_koans)
 * [Tutorialspoint python tutorial](http://www.tutorialspoint.com/python/)
 * [Python Importing](http://blog.amir.rachum.com/post/63666832095/python-importing)
 * [Python's super() considered super!](http://rhettinger.wordpress.com/2011/05/26/super-considered-super/)
+* [No Naked Excepts](http://www.wilfred.me.uk/blog/2013/11/03/no-naked-excepts/)
+* [Supercharge Your Python Developers](http://www.jeffknupp.com/blog/2013/11/15/supercharge-your-python-developers/)
+
+##Why Python?
+* [Python Success Stories](http://www.python.org/about/success/esr/)
+* [Why Python - Slideshare](http://www.slideshare.net/arnav/python-presentation)
+* [5 Reasons Why You Should Learn Python Programming](http://www.codercaste.com/2009/10/20/5-reasons-why-you-should-learn-python-programming/)
+* [10 Reasons Python Rocks for Research (And a Few Reasons it Doesn’t)](http://www.stat.washington.edu/~hoytak/blog/whypython.html)
+* [Why such popularity with Python?](https://programmers.stackexchange.com/questions/5427/why-such-popularity-with-python)
+* [Why was Python's popularity so sudden?](https://programmers.stackexchange.com/questions/27207/why-was-pythons-popularity-so-sudden?rq=1)
+* [Why Python?](http://www.reddit.com/r/Python/comments/1mb4y4/why_python/)
+* [How Python became the language of choice for data science](http://blog.mikiobraun.de/2013/11/how-python-became-the-language-of-choice-for-data-science.html)
 
 ##Style Guide and Idioms
 * [PEP 8 - Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008/)
 * [Code Like a Pythonista: Idiomatic Python](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html)
+* [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
+* [Python Idioms and Efficiency](https://www.memonic.com/user/pneff/folder/python/id/1bufp)
+* [How not to write Python code](http://eikke.com/how-not-to-write-python-code/)
+* [Docstring Conventions](http://www.python.org/dev/peps/pep-0257/)
 
 ##Dictionary
 * [Python hash, id and dictionary order](http://blog.amir.rachum.com/post/54458435089/python-hash-id-and-dictionary-order)
@@ -121,6 +140,8 @@
 * [Meta-matters: Using decorators for better Python programming](http://pydanny-event-notes.readthedocs.org/en/latest/PyconAU2011/decorators.html)
 * [How can I make a chain of function decorators in Python?](http://stackoverflow.com/questions/739654/how-can-i-make-a-chain-of-function-decorators-in-python/1594484#1594484)
 * [The Python Decorator Library](https://wiki.python.org/moin/PythonDecoratorLibrary)
+* [Improve Your Python: Decorators Explained](http://www.jeffknupp.com/blog/2013/11/29/improve-your-python-decorators-explained/)
+* [Painless Decorators](http://hackflow.com/blog/2013/11/03/painless-decorators/)
 
 ##Generators
 * [Generator Tricks for Systems Programmers](http://www.dabeaz.com/generators-uk/)
@@ -141,6 +162,8 @@
 * [Unicode Pain](http://nedbatchelder.com/text/unipain.html)
 * [Python encodings and Unicode](http://eric.themoritzfamily.com/python-encodings-and-unicode.html)
 * [The Updated Guide to Unicode on Python](http://lucumr.pocoo.org/2013/7/2/the-updated-guide-to-unicode/)
+* [More About Unicode in Python 2 and 3](http://lucumr.pocoo.org/2014/1/5/unicode-in-2-and-3/)
+* [Unicode in Python: Common Pitfalls](http://blogs.skicelab.com/maurizio/unicode-common-pitfalls.html)
 
 ##Networking
 * [An intro to Python socket network programming](http://freepythontips.wordpress.com/2013/08/06/python-socket-network-programming/)
@@ -149,10 +172,13 @@
 * [A primer on python metaclasses](http://jakevdp.github.io/blog/2012/12/01/a-primer-on-python-metaclasses/)
 * [What is a metaclass in Python ?](http://stackoverflow.com/questions/100003/what-is-a-metaclass-in-python)
 * [Yet Another Python Metaclass tutorial](http://blog.fruiapps.com/2013/03/Yet-another-Python-MetaClass-Tutorial)
+* [Improve Your Python: Metaclasses and Dynamic Classes With Type](http://www.jeffknupp.com/blog/2013/12/28/improve-your-python-metaclasses-and-dynamic-classes-with-type/)
+* [Metaprogramming in Python](http://pypix.com/python/metaprogramming-python/)
 
 ##Documentation
 * [Documentation is King](http://kennethreitz.org/documentation-is-king/)
 * [Make your open source project documentation suck less](http://kirang89.webfactional.com/2013/05/07/make-your-open-source-project-documentation-suck-less/)
+* [Python Documentation Network](http://pydoc.net/)
 
 ###Sphinx
 * [Quick Sphinx documentation for Python](http://scriptsonscripts.blogspot.in/2012/09/quick-sphinx-documentation-for-python.html)
@@ -169,6 +195,7 @@
 
 ##Debugging
 * [Debugging Tools in Python](http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/)
+* [Debugging Python Like a Boss](https://zapier.com/engineering/debugging-python-boss/)
 
 ###Logging
 * [Sentry - realtime event logging and aggregation platform](https://sentry.readthedocs.org/en/latest/index.html)
@@ -179,9 +206,12 @@
 * [How To Use Coverage.py With Unittest](https://github.com/audreyr/how-to/blob/master/python/use_coverage_with_unittest.rst)
 * [An Extended Introduction to the nose Unit Testing Framework](http://ivory.idyll.org/articles/nose-intro.html)
 * [Test strategies for your Python projects](http://blog.flaper87.com/post/522b9e560f06d32542ede77f/)
+* [Improve Your Python: Understanding Unit Testing](http://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/)
+* [An Introduction to Mocking in Python](http://www.toptal.com/python/an-introduction-to-mocking-in-python)
 
 ##Profiling
 * [A guide to analyzing Python performance](http://www.huyng.com/posts/python-performance-analysis/)
+* [Profiling Python Like a Boss](https://zapier.com/engineering/profiling-python-boss/)
 
 ##Packaging
 * [The Hitchhiker’s Guide to Packaging](http://guide.python-distribute.org/)
@@ -200,6 +230,7 @@
 
 ###Fabric
 * [Using Fabric in a development environment](http://www.pythonforbeginners.com/systems-programming/how-to-use-fabric-in-a-development-environment/)
+* [Capture output from parallel execution with Fabric](http://dmsimard.com/2013/11/29/capture-output-from-parallel-execution-with-fabric/)
 
 ##Warts and Gotchas
 * [Python 2.x gotcha's and landmines](http://stackoverflow.com/questions/530530/python-2-x-gotchas-and-landmines)
@@ -209,7 +240,6 @@
 
 ##Web
 * [Python and Realtime Web](http://mrjoes.github.io/2013/06/21/python-realtime.html)
-* [List of Python API’s](http://www.pythonapi.com/)
 
 ###Frameworks
 ####Flask
@@ -221,6 +251,7 @@
 * [Rapid Web Prototyping with Lightweight Tools](http://www.pixelmonkey.org/2013/03/13/rapid-web-prototyping-with-lightweight-tools)
 * [Build a Simple, Static, Markdown-Powered Blog with Flask](http://www.jamesharding.ca/posts/simple-static-markdown-blog-in-flask/)
 * [How to Build an API with Python and Flask](http://tech.pro/tutorial/1213/how-to-build-an-api-with-python-and-flask)
+* [Create a Simple Music Streaming App with Flask](http://pypix.com/python/create-simple-music-streaming-app-flask/)
 
 ####Web2Py
 * [Building a Twitter clone in Web2Py](http://fragile.org.uk/2013/06/twitter-clone-tutorial-in-web2py-part-1-getting-started/)
@@ -228,6 +259,7 @@
 ####Django
 * [The official Django documentation](https://docs.djangoproject.com/en/1.5/)
 * [Getting started with Django](http://gettingstartedwithdjango.com/)
+* [Starting a Django 1.6 Project the Right Way](http://www.jeffknupp.com/blog/2013/12/18/starting-a-django-16-project-the-right-way/)
 * [Building a hacker news clone in Django](http://arunrocks.com/building-a-hacker-news-clone-in-django-part-1/)
 * [Djen of Django](http://agiliq.com/books/djenofdjango/)
 * [Deploying Django](http://www.rdegges.com/deploying-django/)
@@ -235,6 +267,7 @@
 * [Django From the Ground Up (video tutorials)](http://showmedo.com/videotutorials/series?name=PPN7NA155)
 * [Tango with Django](http://www.tangowithdjango.com/book/)
 * [Django Screencasts](https://godjango.com/)
+* [Let’s TDD a Simple App in Django](http://pypix.com/django/tdd-in-django/)
 * [Django runserver and stunnel for testing HTTPS](http://mgile.com/post/4729505823/django-stunnel)
 * [Scaling database with Django and HAProxy](http://engineering.hackerearth.com/2013/10/07/scaling-database-with-django-and-haproxy/)
 * [Classy Class-Based Views](http://ccbv.co.uk/)
@@ -245,6 +278,9 @@
 ####Tornado
 * [Tornado official documentation](http://www.tornadoweb.org/en/stable/documentation.html)
 * [Fastest database for Tornado](http://www.peterbe.com/plog/fastestdb)
+
+###Web Servers
+* [A Comparison of Web Servers for Python Based Web Applications](https://www.digitalocean.com/community/articles/a-comparison-of-web-servers-for-python-based-web-applications)
 
 ###API and Web Services
 * [How to access various web services in python](http://www.pythonforbeginners.com/python-on-the-web/how-to-access-various-web-services-in-python/)
@@ -279,6 +315,7 @@
 * [Kivy GUI for cross-platform applications](http://kivy.org/)
 * [EffBot.org Introduction to Tkinter](http://effbot.org/tkinterbook/tkinter-index.htm)
 * [Pytkgen: JSON to Tkinter GUI Generator](https://github.com/tmetsch/pytkgen)
+* [Intro to programming with Python and Tkinter](https://wiki.python.org/moin/Intro%20to%20programming%20with%20Python%20and%20Tkinter)
 
 ##Android
 ###SL4A
@@ -293,6 +330,8 @@
 ###SQLAlchemy
 * [SQLAlchemy](http://www.aosabook.org/en/sqlalchemy.html)
 * [SQLAlchemy and you](http://lucumr.pocoo.org/2011/7/19/sqlachemy-and-you/)
+* [Essential SQLAlchemy Tips and Techniques](http://pypix.com/tools-and-tips/essential-sqlalchemy/)
+* [10 common stumbling blocks for SQLAlchemy newbies](http://alextechrants.blogspot.fr/2013/11/10-common-stumbling-blocks-for.html)
 
 ##Data Mining
 * [Linux system mining using Python](http://architects.dzone.com/articles/linux-system-mining-python)
@@ -303,7 +342,13 @@
 * [Pandas and Python: Top 10](http://manishamde.github.io/blog/2013/03/07/pandas-and-python-top-10/)
 * [Learn Pandas](https://bitbucket.org/hrojas/learn-pandas)
 
-###IPython Notebooks
+##IPython Notebooks
+* [A Gallery of Interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
+* [Statistical Natural Language Processing in Python | How To Do Things With Words. And Counters.](http://nbviewer.ipython.org/url/norvig.com/ipython/How%20to%20Do%20Things%20with%20Words.ipynb)
+* [Analysis of World Bank Fertility Rate Data With Statsmodels PCA](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/6m7f4lw9bdog241kqcmb.ipynb)
+* [Modeling the Last Flight of MH370 with a Markov Chain Monte Carlo Method](http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold.ipynb)
+* [Differential Equations in Data Science](http://nbviewer.ipython.org/github/URXtech/techblog/blob/master/continuousTimeMarkovChain/markovChain.ipynb)
+* [Stegotons: solitary waves arising in non-dispersive periodic media](http://nbviewer.ipython.org/gist/ketch/8554686)
 * [The Traveling Salesperson Problem](http://nbviewer.ipython.org/url/norvig.com/ipython/TSPv3.ipynb)
 * [Scientific Computing with Python](http://nbviewer.ipython.org/url/atwallab.cshl.edu/teaching/QBbootcamp3.ipynb)
 * [Gaussian Blur](http://nbviewer.ipython.org/urls/raw.github.com/mroberts3000/GpuComputing/master/IPython/GaussianBlur.ipynb)
@@ -324,6 +369,8 @@
 
 ##Design Patterns
 * [Python Best Practice Patterns by Vladimir Keleshev](http://www.youtube.com/watch?v=GZNUfkVIHAY)
+* [28 Design Patterns in Python and Several Other Languages](https://github.com/oxnz/design-patterns)
+* [Factory Pattern In Python](http://dailypython.wordpress.com/2013/08/04/factory-pattern-in-python/)
 
 ###Concurrency Patterns
 * [Wasp's Nest: The Read-Copy-Update Pattern In Python](http://emptysqua.re/blog/wasps-nest-read-copy-update-python/)
@@ -333,16 +380,26 @@
 * [Celery: Distributed Task Queue](https://celery.readthedocs.org/en/latest/getting-started/index.html)
 * [Gevent for the working Python developer](http://sdiehl.github.io/gevent-tutorial/)
 
+##Functional Programming
+* [Recursion Explained with the Flood Fill Algorithm](http://inventwithpython.com/blog/2011/08/11/recursion-explained-with-the-flood-fill-algorithm-and-zombies-and-cats/)
+* [Functional Programming in Python](http://pypix.com/python/functional-programming/)
+
 ##Python 2 vs 3
 * [Python 2 or 3 ?](http://wiki.python.org/moin/Python2orPython3)
+* [Python 3 Q & A](http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html)
+* [About Python 3](http://alexgaynor.net/2013/dec/30/about-python-3/)
+* [Let’s talk about Python 3.0](http://www.b-list.org/weblog/2008/dec/05/python-3000/)
+* [Pros and Cons about Python 3](http://lucumr.pocoo.org/2010/1/7/pros-and-cons-about-python-3/)
 
 ### Porting to Python 3
 * [How to support both Python 2 and 3](http://ondrejcertik.blogspot.com/2013/08/how-to-support-both-python-2-and-3.html)
 * [How CherryPy supports Python 2 and 3](http://pyvideo.org/video/689/how-cherrypy-supports-python-2-and-3)
-* [($) Porting to Python 3 - The Book Site](http://python3porting.com/)
+* [Porting to Python 3 - The Book Site](http://python3porting.com/)
 
 ##Books
 ###Free
+* [Free Programming Books - Python](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#python)
+* [Python Programming - Free Computer Books](http://freecomputerbooks.com/langPythonBooks.html)
 * [Some free books on Python](http://pythonbooks.revolunet.com/)
 * [Invent with Python](http://inventwithpython.com/chapters/)
 * [Think Python](http://www.greenteapress.com/thinkpython/thinkpython.pdf)
@@ -381,11 +438,13 @@
 * [Guido Van Rossum on the history of Python](http://www.youtube.com/watch?v=ugqu10JV7dk)
 * [PyVideo](http://pyvideo.org/)
 * [Khan Academy - Introduction to programming and computer science using Python](https://www.khanacademy.org/science/computer-science)
+* [What are some "must-watch" Python videos ?](http://www.reddit.com/r/Python/comments/1rs7ub/what_are_some_mustwatch_python_videos/)
 * [Lanyrd - Python Videos](http://lanyrd.com/topics/python/video/)
 * [Python Videos, Tutorials and Screencasts at ShowMeDo](http://showmedo.com/videotutorials/python)
 * [Talks by Brandon Rhodes](http://rhodesmill.org/brandon/talks/)
 * [A Billion Rows per Second: Metaprogramming Python for Big Data](https://www.youtube.com/watch?v=rXj5nayS7Yg)
 * [The newboston site tutorial](http://thenewboston.org/list.php?cat=36)
+* [Python Programming Tutorials](https://www.youtube.com/playlist?list=PLEA1FEF17E1E5C0DA&feature=plcp)
 
 ##Editors and IDE's for Python programming
 * [Setting up Sublime Text for Python Development](http://dbader.org/blog/setting-up-sublime-text-for-python-development)
@@ -416,6 +475,11 @@
 * [Python innards introduction](http://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
 * [Projects - A list of practical projects](https://github.com/thekarangoel/Projects)
 * [More Python Tutorials](http://awaretek.com/tutorials.html)
+* [Developer Tools in Python](http://pypix.com/tools-and-tips/developer-tools/)
+* [The Best of Python in 2013](http://pypix.com/roundups/best-python-2013/)
+* [Top Projects of 2013](http://us4.campaign-archive2.com/?u=9735795484d2e4c204da82a29&id=384b699bca&e=1826c8bb55)
+* [Advanced Regular Expression Tips and Techniques](http://pypix.com/tools-and-tips/advanced-regular-expression-tips-techniques/)
+* [Advanced Data Structures in Python](http://pypix.com/python/advanced-data-structures-python/)
 * [Simple Sudoku solver in python](http://freepythontips.wordpress.com/2013/09/01/sudoku-solver-in-python/)
 * [Looking Inside Dropbox – Security whitepaper](http://freepythontips.wordpress.com/2013/08/30/looking-inside-dropbox-whitepaper/)
 * [Why sorting an array makes a Python loop faster](http://rickystewart.wordpress.com/2013/09/03/why-sorting-an-array-makes-a-python-loop-faster/)
